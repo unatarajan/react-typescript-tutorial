@@ -14,6 +14,7 @@ import { Equal, Expect } from '../helpers/type-utils';
 import React, { ComponentProps } from 'react';
 
 // See https://react-typescript-cheatsheet.netlify.app/docs/advanced/patterns_by_usecase/#props-extracting-prop-types-of-a-component
+// See https://react-typescript-cheatsheet.netlify.app/docs/basic/troubleshooting/types#the-types-i-need-werent-exported
 
 // ComponentProps can take 1 of 2 args: HTML element as a string OR an existing component prefixed with typeof
 // <T extends keyof JSX.IntrinsicElements | JSXElementConstructor<any>>

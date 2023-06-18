@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-export const Tags = () => {
-  const [tags, setTags] = useState([]);
+export const Tags: React.FC = (): JSX.Element => {
+  const [tags, setTags] = useState<{ id: number; value: string }[]>([]);
+  // const [tags, setTags] = useState<Array<{ id: number; value: string }>>([]);
   return (
     <div>
       {tags.map((tag) => {
@@ -13,7 +14,7 @@ export const Tags = () => {
             ...tags,
             {
               id: new Date().getTime(),
-              value: "New",
+              value: 'New',
             },
           ]);
         }}

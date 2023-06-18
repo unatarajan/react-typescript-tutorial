@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 interface TagState {
   tagSelected: number | null;
@@ -39,9 +39,9 @@ export const Tags = () => {
                 ...currentState.tags,
                 {
                   id: new Date().getTime(),
-                  value: "New",
+                  value: 'New',
                   // @ts-expect-error
-                  otherValue: "something",
+                  otherValue: 'something',
                 },
               ],
             })
