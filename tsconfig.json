@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "jsx": "react-jsx",
+    // "jsx": "react-jsx",
+    "jsx": "preserve",
     "module": "ES2022",
     "moduleResolution": "node",
     "noEmit": true,
@@ -11,15 +12,9 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "fake-external-lib": [
-        "./src/fake-external-lib/index"
-      ],
-      "fake-external-component": [
-        "./src/fake-external-lib/component"
-      ]
+      "fake-external-lib": ["./src/fake-external-lib/index"],
+      "fake-external-component": ["./src/fake-external-lib/component"]
     }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

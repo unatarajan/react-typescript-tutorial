@@ -1,6 +1,7 @@
-import React, { ComponentProps } from "react";
+import React, { ComponentProps } from 'react';
 
-export const Button = ({ className, ...rest }: ComponentProps<"button">) => {
+// inline React type indicating props are component props for a button element (in HTML)
+export const Button = ({ className, ...rest }: ComponentProps<'button'>) => {
   return (
     <button {...rest} className={`default-classname ${className}`}></button>
   );
